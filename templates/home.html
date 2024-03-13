@@ -22,8 +22,12 @@
 
 </p>
     <h2 class='text-center mt-2 mb-4'>my project</h2>
-    <p class="lead">TODO</p>
-      <div>
+    <div> 
+    {%for st in projects%}
+      {% include "projectslist.html" %}
+    {% endfor %}
+    </div>
+      <div class='text-center'>
   <button class="btn btn-primary btn-lg">Contact US</button>
       <p class="mt-4">Copyright 2023, Mohammed</p>
       </div>
