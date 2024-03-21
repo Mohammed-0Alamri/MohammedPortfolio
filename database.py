@@ -22,7 +22,7 @@ def load_project_from_db(id):
 def add_message_to_db(data):
   with engine.connect() as conn:
     sql = text(
-        f"INSERT INTO mymessages (Full_name, email, Massage) VALUES (\'{data['full_name']}\', \'{data['email']}\', \'{data['message']}\')"
+        f"INSERT INTO mymessages (Full_name, email, Massage) VALUES (\'{data['Full_name']}\', \'{data['email']}\', \'{data['Massage']}\')"
     )
     print(sql)
     conn.execute(sql)

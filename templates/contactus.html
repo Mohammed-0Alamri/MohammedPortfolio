@@ -1,15 +1,23 @@
+<head>
+  {%include "bootstrap.html"%}
+</head>
+<body>
+  {%include "banner.html"%}
 <h4>Send me massage</h4>
 <form action="/message_submitted" method='post'>
-  <div>
+  <div class="mb-2">
     <label>Full name</label><br>
     <input type="text" name = 'Full_name' placeholder="Mohammed Alamri">
   </div>
 
-<div>
+<div class="mb-2>
   <label>Email</label><br>
   <input type="text" name = 'email' placeholder="exmaple@exm.com">
 </div>
+  <div class="mb-2>
   <label>Massage</label><br>
   <textarea type="text" name="Massage"></textarea>
+  </div>
   <input type="submit" value="Send">
 </form>
+</body>
